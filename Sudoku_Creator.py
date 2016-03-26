@@ -2,12 +2,9 @@ import Tkinter
 import tkFileDialog
 import tkFont
 import random
-import Image, ImageDraw
 from datetime import datetime
 
 import doctest
-
-
 
 class vector2:  # class to hold x and y coordinates
 	def __init__(self, x, y):
@@ -435,8 +432,6 @@ puzzleField = []
 canvas = Tkinter.Canvas(window, bg="white", height=500, width=500)
 create(window)
 
-
-# doctest.testmod()
 
 # create buttons
 button_generate = Tkinter.Button(window, text="Generate", command=lambda: create(window), bg="white")
